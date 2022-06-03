@@ -106,35 +106,8 @@
                     <h1>Sign Up</h1>
                    <p>Fill out the form below to sign up for Tivo. Already signed up? Then just <a class="white" href="log-in.html">Log In</a></p> 
                     <!-- Sign Up Form -->
-                    <div class="form-container">
-                        <form id="signUpForm" data-toggle="validator" data-focus="false">
-                            <div class="form-group">
-                                <input type="email" class="form-control-input" id="semail" required>
-                                <label class="label-control" for="semail">Email</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="sname" required>
-                                <label class="label-control" for="sname">Name</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="spassword" required>
-                                <label class="label-control" for="spassword">Password</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group checkbox">
-                                <input type="checkbox" id="sterms" value="Agreed-to-Terms" required>I agree with Tivo's <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">SIGN UP</button>
-                            </div>
-                            <div class="form-message">
-                                <div id="smsgSubmit" class="h3 text-center hidden"></div>
-                            </div>
-                        </form>
-                    </div> <!-- end of form container -->
+			<h2>Chat with our executive</h2>
+			<iframe src='https://webchat.botframework.com/embed/chljabkl-bot?s=YcmCny2b2mE.jvcHhx2-RFw0y0TY1Exu4CVY_Gr9fuTwI2ZhV1X3oFM'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
                     <!-- end of sign up form -->
 
                 </div> <!-- end of col -->
@@ -154,4 +127,20 @@
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
+
+<script>
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', "https://webchat.botframework.com/api/tokens", true);
+    xhr.setRequestHeader('Authorization', 'BotConnector ' + 'YcmCny2b2mE.jvcHhx2-RFw0y0TY1Exu4CVY_Gr9fuTwI2ZhV1X3oFM');
+    xhr.send();
+    xhr.onreadystatechange = processRequest;
+
+    function processRequest(e) {
+      if (xhr.readyState == 4  && xhr.status == 200) {
+        var response = JSON.parse(xhr.responseText);
+        document.getElementById("chat").src="https://webchat.botframework.com/embed/<chljabkl>?t="+response
+      }
+    }
+  </script>
 </html>
