@@ -872,17 +872,7 @@
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
     </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
-    <!--chatbot-->
-	<div class="chat-popup" id="myForm">
-    	<h1>Chat</h1>
-	<button class="openChatBtn" onclick="openForm()">Chat</button>
-		<div class="openChat">
-		<iframe src='https://webchat.botframework.com/embed/chljabkl-bot?s=YcmCny2b2mE.jvcHhx2-RFw0y0TY1Exu4CVY_Gr9fuTwI2ZhV1X3oFM'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
-			<button type="button" class="btn close" onclick="closeForm()">
-				Close
-			</button>
-		</div>    	
+    <!-- end of copyright --> 	
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
@@ -893,28 +883,4 @@
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
-<script>
-
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', "https://webchat.botframework.com/api/tokens", true);
-    xhr.setRequestHeader('Authorization', 'BotConnector ' + 'YcmCny2b2mE.jvcHhx2-RFw0y0TY1Exu4CVY_Gr9fuTwI2ZhV1X3oFM');
-    xhr.send();
-    xhr.onreadystatechange = processRequest;
-
-    function processRequest(e) {
-      if (xhr.readyState == 4  && xhr.status == 200) {
-        var response = JSON.parse(xhr.responseText);
-        document.getElementById("chat").src="https://webchat.botframework.com/embed/<chljabkl>?t="+response
-      }
-    }
-	document .querySelector(".openChatBtn") .addEventListener("click", openForm);
-   document.querySelector(".close").addEventListener("click", closeForm);
-   function openForm() {
-      document.querySelector(".openChat").style.display = "block";
-   }
-   function closeForm() {
-      document.querySelector(".openChat").style.display = "none";
-   }
-
-  </script>
 </html>
