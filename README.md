@@ -10,7 +10,7 @@
 Lifestyle
 
 **Project Title :**
-E-Commerce Website with FAQ Bot
+[E-Commerce Website with FAQ Bot](https://ekasnh.github.io/Ecommercesite_with_azureBot/)
 
 **Problem Statement/Opportunity :**
 An e-commerce company wants to build a sample Front End prototype website for their business as the online shopping industry has been growing at an incredible rate, and so have ecommerce challenges. Build a website that have: Home Page,feature,chatbot,details,pricing,sign-up,Log-In page along with FAQ Bot deployed on Website for customers help.
