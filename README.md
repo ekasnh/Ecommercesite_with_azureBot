@@ -10,8 +10,8 @@
 Lifestyle
 
 **website endpoint**
-[Primary Endpoint](https://frtwebsitehosting.z13.web.core.windows.net/)
-[Secondary Endpoint](https://frtwebsitehosting-secondary.z13.web.core.windows.net/)
+1) [Primary Endpoint](https://frtwebsitehosting.z13.web.core.windows.net/)
+2) [Secondary Endpoint](https://frtwebsitehosting-secondary.z13.web.core.windows.net/)
 
 **Project Title :**
 [E-Commerce Website with FAQ Bot](https://ekasnh.github.io/Ecommercesite_with_azureBot/)
