@@ -9,6 +9,10 @@
 **Industry :**
 Lifestyle
 
+**website endpoint**
+[Primary Endpoint](https://frtwebsitehosting.z13.web.core.windows.net/)
+[Secondary Endpoint](https://frtwebsitehosting-secondary.z13.web.core.windows.net/)
+
 **Project Title :**
 [E-Commerce Website with FAQ Bot](https://ekasnh.github.io/Ecommercesite_with_azureBot/)
 
@@ -24,6 +28,6 @@ Azure Bot Service, QnA Maker, Static Web Apps
 **Other Azure Technologies : App Service
 
 **Hosting**
-This is website is deployed on github 
+This is website is deployed on azure 
 
 ![FRT](https://user-images.githubusercontent.com/68435362/173156390-329334ee-5911-447d-b0aa-8150af218206.jpeg)
